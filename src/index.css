@@ -1,1 +1,10 @@
 @import "tailwindcss";
+*{
+    font-family:New Century Schoolbook, TeX Gyre Schola, serif;                   
+}
+
+:root{
+    --c1:#fbf3f4;
+    --c2:#A96461;
+   
+}
