@@ -2,7 +2,10 @@
 *{
     font-family:New Century Schoolbook, TeX Gyre Schola, serif;                   
 }
-
+body{
+    background-color:black;
+    color:white;
+}
 :root{
     --c1:#fbf3f4;
     --c2:#A96461;
