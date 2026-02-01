@@ -3,15 +3,17 @@ import Product from '../components/Product'
 import Service from '../components/Service'
 import About from '../components/About'
 import { Route, Routes } from 'react-router-dom'
+import ProductDetails from '../components/ProductDetails'
 
 const MainRoutes = () => {
   return (
-     <Routes>
+  <Routes>
     <Route path="/" element={<Home/>}/>
-     <Route path="/product" element={<Product/>}/>
-      <Route path="/service" element={<Service/>}/>
-       <Route path="/about" element={<About/>}/>
-   </Routes>
+    <Route path="/product" element={<Product/>}/>
+    <Route path="/product/:name" element={<ProductDetails/>}/>
+    <Route path="/service" element={<Service/>}/>
+    <Route path="/about" element={<About/>}/>
+  </Routes>
   )
 }
 

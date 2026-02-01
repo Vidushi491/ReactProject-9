@@ -18,14 +18,14 @@ const [open, setOpen] = useState(false)
         <img 
         src={logo} 
         alt="logo" 
-        className="w-14 h-14 object-cover"
+        className="w-14 h-14 object-cover  "
         />
         <BlurText
         text="My Recipe"
         animateBy="words"
         direction="top"
         delay={200}
-        className="font-bold text-lg"
+        className="font-bold text-lg "
         />
         </div>
         <button 
@@ -52,16 +52,52 @@ const [open, setOpen] = useState(false)
         </button>
         <ul className="flex mt-6 p-2 flex-col gap-8 font-extrabold text-2xl">
           <li onClick={()=>setOpen(false)}>
-          <NavLink className = {(e) => (e.isActive ? "text-yellow-600" : "")} to = '/'>Home</NavLink>
+          <NavLink 
+          className = {(e) => (e.isActive ? "text-blue-300" : "")} 
+          to = '/'>
+          <BlurText
+          text="Home"
+          animateBy="words"
+          direction="top"
+          delay={200}
+          className="font-bold text-lg "/>
+          </NavLink>
           </li>
           <li onClick={()=>setOpen(false)}>
-          <NavLink className = {(e) => (e.isActive ? "text-yellow-600" : "")} to = '/product'>Product</NavLink>
+          <NavLink 
+            className = {(e) => (e.isActive ? "text-blue-300" : "")} 
+            to = '/product'>
+            <BlurText
+            text="Product"
+            animateBy="words"
+            direction="top"
+            delay={200}
+            className="font-bold text-lg"/>
+            </NavLink>
           </li>
           <li onClick={()=>setOpen(false)}>
-          <NavLink className = {(e) => (e.isActive ? "text-yellow-600" : "")} to = '/service'>Service</NavLink>
+          <NavLink 
+            className = {(e) => (e.isActive ? "text-blue-300" : "")} 
+            to = '/service'>
+            <BlurText
+            text="Service"
+            animateBy="words"
+            direction="top"
+            delay={200}
+            className="font-bold text-lg"/>
+            </NavLink>
           </li>
           <li onClick={()=>setOpen(false)}>
-          <NavLink className = {(e) => (e.isActive ? "text-yellow-600" : "")} to = '/about'>About</NavLink>
+          <NavLink 
+            className = {(e) => (e.isActive ? "text-blue-300" : "")} 
+            to = '/about'>
+            <BlurText
+            text="About"
+            animateBy="words"
+            direction="top"
+            delay={200}
+            className="font-bold text-lg"/>
+            </NavLink>
           </li>
         </ul>
         </div>
@@ -73,31 +109,58 @@ const [open, setOpen] = useState(false)
         <img 
         src={logo} 
         alt="logo" 
-        className="w-10 h-10 object-cover rounded-full"
+        className="w-10 h-10 object-cover rounded-full "
         />
         <BlurText
         text="My Recipe"
         animateBy="words"
         direction="top" 
         delay={120}
-        className="font-bold text-lg"
+        className="font-bold text-lg "
         />
         </div>
 
         <div className="flex gap-5 font-semibold text-xl">
-        <NavLink className = {(e) => (e.isActive ? "text-yellow-600 " : "")} 
-        to = '/'>        
-        Home       
-        </NavLink>
-        <NavLink className = {(e) => (e.isActive ? "text-yellow-600" : "")} to = '/product'>
-        Product        
-        </NavLink>        
-        <NavLink className = {(e) => (e.isActive ? "text-yellow-600" : "")} to = '/service'>        
-        Service     
-        </NavLink>
-        <NavLink className = {(e) => (e.isActive ? "text-yellow-600" : "")} to = '/about'>
-        About
-        </NavLink>
+        <NavLink 
+          className = {(e) => (e.isActive ? "text-blue-300" : "")} 
+          to = '/'>
+          <BlurText
+          text="Home"
+          animateBy="words"
+          direction="top"
+          delay={200}
+          className="font-bold text-lg"/>
+          </NavLink>
+        <NavLink 
+          className = {(e) => (e.isActive ? "text-blue-300" : "")} 
+          to = '/product'>
+          <BlurText
+          text="Product"
+          animateBy="words"
+          direction="top"
+          delay={200}
+          className="font-bold text-lg"/>
+          </NavLink>        
+        <NavLink 
+          className = {(e) => (e.isActive ? "text-blue-300" : "")} 
+          to = '/service'>        
+          <BlurText
+          text="Service"
+          animateBy="words"
+          direction="top"
+          delay={200}
+          className="font-bold text-lg"/>
+          </NavLink>
+        <NavLink 
+          className = {(e) => (e.isActive ? "text-blue-300" : "")} 
+          to = '/about'>
+          <BlurText
+          text="About"
+          animateBy="words"
+          direction="top"
+          delay={200}
+          className="font-bold text-lg"/>
+          </NavLink>
         </div>
       </div>
   </div>
