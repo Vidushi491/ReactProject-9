@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Product = () => {
 const navigate = useNavigate();
 const ProductHandler = (name)=>{
-  navigate(`.product/details/${name}`);
+  navigate(`/product/detail/${name}`);
 }
   return (
     <div className="flex flex-wrap gap-30 p-6">
