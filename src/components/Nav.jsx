@@ -10,7 +10,7 @@ const Nav = () => {
     <div className="w-full">
       {/* FOR MOBILE VIEW */}
       <div className="md:hidden relative">
-        <div className="flex items-center justify-between px-2 h-16 bg-black shadow">
+        <div className="flex items-center justify-between px-2 h-16 bg-[#B5B5A1] shadow">
           <div className="flex items-center gap-16">
             <img
               src={logo}
@@ -23,11 +23,11 @@ const Nav = () => {
             animateBy="words"
             direction="top"
             delay={200}
-            className="font-bold text-lg"
+            className="font-semibold text-lg"
           />
           <button
             onClick={() => setOpen(true)}
-            className="text-2xl font-bold"
+            className="text-xl font-semibold"
           >
             ☰
           </button>
@@ -35,25 +35,25 @@ const Nav = () => {
 
         {open && (
           <div
-            className="fixed inset-0 bg-black/40 z-40"
+            className="fixed inset-0 bg-[#B5B5A1] z-40"
             onClick={() => setOpen(false)}
           ></div>
         )}
         <div
-          className={`fixed top-0 right-0 h-full w-50 bg-black z-50 transform ${
+          className={`fixed top-0 right-0 h-full w-50 bg-[#B5B5A1] z-50 transform ${
             open ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300`}
         >
           <button
-            className="p-2 font-bold text-4xl"
+            className="p-2 font-semibold text-sm"
             onClick={() => setOpen(false)}
           >
             Close
           </button>
-          <ul className="flex mt-6 p-2 flex-col gap-8 font-extrabold text-2xl">
+          <ul className="flex mt-6 p-2 flex-col gap-8 font-bold text-xl">
             <li onClick={() => setOpen(false)}>
               <NavLink
-                className={(e) => (e.isActive ? "text-blue-300" : "")}
+                className={(e) => (e.isActive ? "text-white" : "")}
                 to="/"
               >
                 <BlurText
@@ -61,13 +61,13 @@ const Nav = () => {
                   animateBy="words"
                   direction="top"
                   delay={200}
-                  className="font-bold text-lg"
+                  className="font-semibold text-sm"
                 />
               </NavLink>
             </li>
             <li onClick={() => setOpen(false)}>
               <NavLink
-                className={(e) => (e.isActive ? "text-blue-300" : "")}
+                className={(e) => (e.isActive ? "text-white" : "")}
                 to="/product"
               >
                 <BlurText
@@ -75,13 +75,13 @@ const Nav = () => {
                   animateBy="words"
                   direction="top"
                   delay={200}
-                  className="font-bold text-lg"
+                  className="font-semibold text-sm"
                 />
               </NavLink>
             </li>
             <li onClick={() => setOpen(false)}>
               <NavLink
-                className={(e) => (e.isActive ? "text-blue-300" : "")}
+                className={(e) => (e.isActive ? "text-white" : "")}
                 to="/create"
               >
                 <BlurText
@@ -89,13 +89,13 @@ const Nav = () => {
                   animateBy="words"
                   direction="top"
                   delay={200}
-                  className="font-bold text-lg"
+                  className="font-semibold text-sm"
                 />
               </NavLink>
             </li>
             <li onClick={() => setOpen(false)}>
               <NavLink
-                className={(e) => (e.isActive ? "text-blue-300" : "")}
+                className={(e) => (e.isActive ? "text-white" : "")}
                 to="/about"
               >
                 <BlurText
@@ -103,7 +103,7 @@ const Nav = () => {
                   animateBy="words"
                   direction="top"
                   delay={200}
-                  className="font-bold text-lg"
+                  className="font-semibold text-sm"
                 />
               </NavLink>
             </li>
@@ -112,7 +112,7 @@ const Nav = () => {
       </div>
 
       {/* FOR DESKTOP VIEW */}
-      <div className="hidden md:flex items-center justify-between px-3 py-2 bg-black shadow">
+      <div className="hidden md:flex items-center justify-between px-3 py-2 bg-[#B5B5A1] shadow">
         <div className="flex items-center gap-3">
           <img
             src={logo}
@@ -124,13 +124,13 @@ const Nav = () => {
             animateBy="words"
             direction="top"
             delay={120}
-            className="font-bold text-lg"
+            className="font-semibold text-lg"
           />
         </div>
 
-        <div className="flex gap-5 font-semibold text-xl">
+        <div className="flex gap-5 font-semibold text-sm">
           <NavLink
-            className={(e) => (e.isActive ? "text-blue-300" : "")}
+            className={(e) => (e.isActive ? "text-white" : "")}
             to="/"
           >
             <BlurText
@@ -138,11 +138,11 @@ const Nav = () => {
               animateBy="words"
               direction="top"
               delay={200}
-              className="font-bold text-lg"
+              className="font-medium text-sm"
             />
           </NavLink>
           <NavLink
-            className={(e) => (e.isActive ? "text-blue-300" : "")}
+            className={(e) => (e.isActive ? "text-white" : "")}
             to="/product"
           >
             <BlurText
@@ -150,11 +150,11 @@ const Nav = () => {
               animateBy="words"
               direction="top"
               delay={200}
-              className="font-bold text-lg"
+              className="font-medium text-sm"
             />
           </NavLink>
           <NavLink
-            className={(e) => (e.isActive ? "text-blue-300" : "")}
+            className={(e) => (e.isActive ? "text-white" : "")}
             to="/create"
           >
             <BlurText
@@ -162,11 +162,11 @@ const Nav = () => {
               animateBy="words"
               direction="top"
               delay={200}
-              className="font-bold text-lg"
+              className="font-medium text-sm"
             />
           </NavLink>
           <NavLink
-            className={(e) => (e.isActive ? "text-blue-300" : "")}
+            className={(e) => (e.isActive ? "text-white" : "")}
             to="/about"
           >
             <BlurText
@@ -174,7 +174,7 @@ const Nav = () => {
               animateBy="words"
               direction="top"
               delay={200}
-              className="font-bold text-lg"
+              className="font-medium text-sm"
             />
           </NavLink>
         </div>
