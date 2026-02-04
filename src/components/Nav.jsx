@@ -35,7 +35,7 @@ const Nav = () => {
 
         {open && (
           <div
-            className="fixed inset-0 bg-[#B5B5A1] z-40"
+            className="fixed inset-0 bg-white z-40"
             onClick={() => setOpen(false)}
           ></div>
         )}
@@ -45,12 +45,12 @@ const Nav = () => {
           } transition-transform duration-300`}
         >
           <button
-            className="p-2 font-semibold text-sm"
+            className="p-2 font-bold text-xl"
             onClick={() => setOpen(false)}
           >
             Close
           </button>
-          <ul className="flex mt-6 p-2 flex-col gap-8 font-bold text-xl">
+          <ul className="flex mt-6 p-2 flex-col gap-8 font-bold text-2xl">
             <li onClick={() => setOpen(false)}>
               <NavLink
                 className={(e) => (e.isActive ? "text-white" : "")}
@@ -61,7 +61,7 @@ const Nav = () => {
                   animateBy="words"
                   direction="top"
                   delay={200}
-                  className="font-semibold text-sm"
+                  className="font-semibold text-2xl"
                 />
               </NavLink>
             </li>
@@ -75,7 +75,7 @@ const Nav = () => {
                   animateBy="words"
                   direction="top"
                   delay={200}
-                  className="font-semibold text-sm"
+                  className="font-semibold text-2xl"
                 />
               </NavLink>
             </li>
@@ -85,11 +85,11 @@ const Nav = () => {
                 to="/create"
               >
                 <BlurText
-                  text="Create-Recipes"
+                  text="Create"
                   animateBy="words"
                   direction="top"
                   delay={200}
-                  className="font-semibold text-sm"
+                  className="font-semibold text-2xl"
                 />
               </NavLink>
             </li>
@@ -103,7 +103,7 @@ const Nav = () => {
                   animateBy="words"
                   direction="top"
                   delay={200}
-                  className="font-semibold text-sm"
+                  className="font-semibold text-2xl"
                 />
               </NavLink>
             </li>
