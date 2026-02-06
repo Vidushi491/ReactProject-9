@@ -1,22 +1,16 @@
-import { useContext } from 'react'
+import { useContext } from 'react';
 import { RecipeContext } from '../context/RecipeContext';
+import RecipeCard from '../components/RecipeCard';
 
 const Recipes = () => {
     
 const {data} = useContext(RecipeContext);
-console.log
-const renderrecipes = data.map((recipes) => 
-{
-    return (   
-    <div key = {recipes.id}>
-    <h1>{recipes.recipeName} </h1>
-    </div>
-    )
-})
 
-  return (
-    <div>{renderrecipes}</div>
-  )
+const renderrecipes = data.map((recipes) => (
+  <RecipeCard key={recipes.id} recipe={recipes}/>
+));
+    return (
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">{renderrecipes}</div>
+    ) 
 }
-
-export default Recipes
+export default Recipes;

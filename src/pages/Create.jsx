@@ -45,7 +45,7 @@ const Create = () => {
               Recipe Name
             </label>
             <input
-              {...register("recipeName")}
+              {...register("RName")}
               type="text"
               className="w-full border rounded-lg px-3 py-2 resize-none focus:ring-1 outline-none bg-white"
               placeholder="Dal Makhani"
@@ -57,7 +57,7 @@ const Create = () => {
               Description
             </label>
             <textarea
-              {...register("description")}
+              {...register("desc")}
               className="w-full border rounded-lg px-3 py-2 resize-none focus:ring-1 outline-none bg-white"
               rows={4}
               placeholder="Dal Makhani  North Indian Punjabi dish ..."
@@ -69,7 +69,7 @@ const Create = () => {
               Instruction
             </label>
             <textarea
-              {...register("instructions")}
+              {...register("inst")}
               className="w-full border rounded-lg px-3 py-2 resize-none focus:ring-1 outline-none bg-white"
               rows={4}
               placeholder="1. Rinse the whole black lentils and red kidney beans under cold water until the water runs clear..."
@@ -81,7 +81,7 @@ const Create = () => {
               Ingredients
             </label>
             <textarea
-              {...register("ingredients")}
+              {...register("ingr")}
               className="w-full border rounded-xl px-3 py-2 resize-none focus:ring-1 outline-none bg-white"
               rows={6}
               placeholder="whole black lentils and red kidney beans , slow-cooked with tomatoes, ginger, garlic, and onions ..."
@@ -93,7 +93,7 @@ const Create = () => {
               Category
             </label>
             <select
-              {...register("category")}
+              {...register("cat")}
               className="w-full border rounded-xl px-3 py-2 resize-none focus:ring-1 outline-none bg-white">
               <option value = "">Select Category</option>
               <option value = "Primary Meal">Primary Meal</option>
@@ -107,7 +107,7 @@ const Create = () => {
           <div className="md:col-span-2">
             <label className="block text-sm font-medium mb-1">Chef Name</label>
             <textarea
-              {...register("chefName")}
+              {...register("CName")}
               className="w-full border rounded-xl px-2 py-2 resize-none focus:ring-1 outline-none bg-white"
               placeholder="Garima Arora"
             ></textarea>
