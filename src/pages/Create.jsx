@@ -3,14 +3,19 @@ import BlurText from "../pages/BlurText";
 import { nanoid } from "nanoid";
 import { useContext } from "react";
 import { RecipeContext } from "../context/RecipeContext";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
+  const navigate = useNavigate();
   const { register, handleSubmit, reset } = useForm();
   const { data, setData } = useContext(RecipeContext);
   const SubmitHandler = (recipe) => {
     recipe.id = nanoid();
     setData([...data, recipe]);
+    toast.success("Recipe Created Successfully 😊");
     reset();
+    navigate("/recipes");
   };
 
   return (

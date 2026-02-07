@@ -23,15 +23,15 @@ const RecipeProvider = ({ children }) => {
         ],
         "ingr": 
         [
-        "Baguette, sliced",
-        "Tomatoes, diced",
-        "Fresh basil, chopped",
-        "Garlic cloves, minced",
-        "Balsamic glaze",
+        "Baguette, sliced", 
+        "Tomatoes, diced", 
+        "Fresh basil, chopped", 
+        "Garlic cloves, minced", 
+        "Balsamic glaze", 
         "Olive oil",
         "Salt and pepper to taste"
         ],
-        "CName": "Pankaj Sharma",
+        "CName": "Pankaj chamoli",
         },
         {
         "id": 2,

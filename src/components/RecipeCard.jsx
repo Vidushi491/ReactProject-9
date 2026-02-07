@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 const RecipeCard = (props) => {
     const{id, image, RName, desc, ingr, CName} = props.recipe;
   return (
-   <div className="bg-white overflow-hidden rounded-xl shadow">
+   <div className="bg-white overflow-hidden rounded-xl shadow hover:scale-105 active:scale-95 transition-transform duration-300">
          {/* ................... For Mobile View   .................. */}
          <div className="md:hidden">
-        <Link to={`/recipe/detail/${id}`}>
+        <Link to={`/recipe/detail/${id}`}
+        className="block">
         <img 
         src={image} 
         alt={RName} 
@@ -17,10 +18,12 @@ const RecipeCard = (props) => {
         <small className="block p-4 text-center font-bold text-sm text-gray-500">{CName}</small>
         </Link>
         </div>
+        
 
         {/* ................... For Laptop View   .................. */}
         <div className="hidden md:block">
-        <Link to={`/recipe/detail/${id}`}>
+        <Link to={`/recipe/detail/${id}`}
+        className="block">
         <img 
         src={image} 
         alt={RName} 
