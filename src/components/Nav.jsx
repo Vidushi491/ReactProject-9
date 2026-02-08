@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logo.png";
 import BlurText from "../pages/BlurText";
 
 const Nav = () => {
@@ -12,12 +11,7 @@ const Nav = () => {
       {/* FOR MOBILE VIEW */}
 
       <div className="md:hidden relative">
-        <div className="flex items-center justify-between px-2 h-16 bg-[#B5B5A1] shadow">
-
-          <div className="flex items-center gap-16">
-          <img src={logo} alt="logo" className="w-14 h-14 object-cover" />
-          </div>
-
+        <div className="flex items-center justify-between px-2 h-10 bg-[#E1D2C1] shadow">
           <BlurText
             text="My Recipe"
             animateBy="words"
@@ -41,7 +35,7 @@ const Nav = () => {
         )}
 
         <div
-        className={`fixed top-0 right-0 h-full w-50 bg-[#B5B5A1] z-50 transform ${
+        className={`fixed top-0 right-0 h-full w-50 bg-[#E1D2C1] z-50 transform ${
         open ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300`}>
         <button
@@ -103,13 +97,9 @@ const Nav = () => {
 
       {/* FOR DESKTOP VIEW */}
 
-      <div className="hidden md:flex items-center justify-between px-3 py-2 bg-[#B5B5A1] shadow">
+      <div className="hidden md:flex items-center justify-between  px-4 py-1 bg-[#E1D2C1] shadow">
 
           <div className="flex items-center gap-3">
-          <img
-            src={logo}
-            alt="logo"
-            className="w-10 h-10 object-cover rounded-full" />
           <BlurText
             text="My Recipe"
             animateBy="words"

@@ -33,7 +33,7 @@ const Create = () => {
         </h1>
         <form
           onSubmit={handleSubmit(SubmitHandler)}
-          className="bg-[#B5B5A1] rounded-xl shadow p-4 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 "
+          className=" p-4 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 "
         >
           <div>
             <label className="block text-sm font-medium mb-1">Image</label>
