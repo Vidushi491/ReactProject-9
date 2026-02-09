@@ -34,8 +34,8 @@ export const DetailedRecipes = () => {
                 {/* .....for laptop ....... */}
   <div className="hidden md:block">
 
-    <div className="flex gap-4 mt-3">
-      <div className="w-[40%] px-2 ">
+    <div className="flex gap-3 mt-3">
+      <div className="w-[40%] px-6 mt-12">
       <img 
       src={recipe.image} 
       alt={recipe.RName} 
@@ -55,14 +55,18 @@ export const DetailedRecipes = () => {
 
         <div className="mt-3 ">
         <h2 className="text-2xl font-bold mb-2 ">Ingredients</h2>
-        <p className="text-sm font-light whitespace-pre-wrap text-black">{recipe.ingr}</p>
+        <p className="text-sm font-light whitespace-pre-wrap text-black mb-3">{recipe.ingr}</p>
         </div>
 
-        <div>
-        <button className="bg-[#442D1D] text-[#E1D2C1]">
+        <div className="flex justify-start items-center gap-8 ">
+        <button 
+        // onClick={}
+        className="bg-[#442D1D] text-[#E1D2C1] p-1 text-sm font-bold shadow hover:scale-95 active:scale-95 transition-transform duration-300">
         Update Recipe
         </button>
-        <button className="bg-[#442D1D] text-[#E1D2C1]">
+        <button 
+        // onClick={}
+        className="bg-[#442D1D] text-[#E1D2C1] p-1 text-sm font-bold shadow hover:scale-95 active:scale-95 transition-transform duration-300">
         Delete Recipe
         </button>
         </div>
