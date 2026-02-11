@@ -83,7 +83,7 @@ const Create = () => {
 
           <div className="md:col-span-2">
             <label className="block text-sm font-medium mb-1">
-              Ingredients
+              ingredients
             </label>
             <textarea
               {...register("ingr")}
