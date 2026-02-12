@@ -1,12 +1,39 @@
-import { useContext } from "react"
+import { use, useContext } from "react"
 import { RecipeContext } from "../context/RecipeContext"
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { filter, image } from "motion/react-client";
+import { useForm } from "react-hook-form";
 
 export const DetailedRecipes = () => {
-  const {data} = useContext(RecipeContext);
+  const {data, setdata} = useContext(RecipeContext);
+  const navigate = useNavigate();
   const params = useParams();
   const recipe = data.find((recipe) => params.id == recipe.id);
-  console.log(recipe);
+  const {register, handleSubmit, reset } = useForm({
+    defaultValues:{
+      RName: recipe.RName,
+      CName: recipe.CName,
+      image: recipe.image,
+      desc: recipe.desc,
+      ingr: recipe.ingr,
+      inst: recipe.inst,
+    },
+  });
+
+  const SubmitHandler = (recipe) => {
+    const index = data.findIndex((recipe) => params.id == recipe.id);
+    const copydata = [...data];
+    copydata[index] = {...copydata[index], ...recipe};
+    setdata(copydata);
+    toast.success("Recipe updated!");
+    };
+  
+    const DeleteHandler = () => {
+      const filterdata = data.filter((r) => r.id != params.id);
+      setdata(filterdata);
+      toast.success("recipe deleted!");
+      navigate("/recipes");
+    };
   return (
 recipe ? <div>
              {/* ............for mobile............ */}
@@ -21,6 +48,15 @@ recipe ? <div>
       <h1 className="text-2xl font-bold text-center mb-1">{recipe.RName}</h1>
       <h2 className="mb-1 text-sm font-semibold text-gray-500 text-center
       ">{recipe.CName}</h2>
+
+      {recipe.desc && (
+      <div className=" mt-1 mb-1">
+      <div className="border-2 border-gray-100"></div>
+      <h2 className="text-lg font-semibold text-center">Description</h2>
+      <div className="border-2 border-gray-100"></div>
+      <p className="text-sm font-light p-2 text-center">{recipe.desc}</p>
+      </div>)}
+
       <div className="border-2 border-gray-100"></div>
       <h2 className="mt-1 text-lg font-semibold text-center">Instruction</h2>
       <div className="border-2 border-gray-100"></div>
@@ -31,25 +67,34 @@ recipe ? <div>
       <div className="border-2 border-gray-100"></div>
       <p className="text-sm font-light p-2 text-center">{recipe.ingr}</p>
 
-     </div>
+        <div className=" flex gap-6 justify-center items-center mt-4 mb-4">
+        <button 
+        className="bg-[#B99668] text-white px-2 rounded-sm shadow hover:scale-105 active:scale-95 transition-transform duration-300"
+        onClick={DeleteHandler}> Delete Recipe </button>
+        <button 
+        className="bg-[#B99668] text-white px-2 rounded-sm shadow hover:scale-105 active:scale-95 transition-transform duration-300"
+        onClick={SubmitHandler}> Update Recipe</button>
+        </div>
+    </div>
                 {/* .....for laptop ....... */}
-  <div className="hidden md:block">
-     <div className="mt-3">
-        <h1 className="text-4xl font-extrabold text-center">{recipe.RName}</h1>
-        <h2 className="text-sm font-extralight mb-8 text-center">{recipe.CName}</h2>
-      </div>
+      <div className="hidden md:block">
 
-    <div className="flex flex-row gap-4">
-        <div className="w-[40%] px-14 mt-5 ">
+        <div className="flex flex-row gap-2">
+        <div className="w-[40%] px-15 mt-15 ">
         <img 
         src={recipe.image} 
         alt={recipe.RName} 
         className="rounded-full h-75 object-cover hover:scale-105 active:scale-95 transition-transform duration-300"/>
         </div>
 
-      <div className="w-[60%] p-4"> 
+        <div className="w-[60%] p-2"> 
 
-        <div className="bg-[#a3968400] rounded-xl p-4">
+        <div className="mt-3" >
+        <h1 className="text-4xl font-extrabold">{recipe.RName}</h1>
+        <h2 className="text-sm font-extralight mb-8">{recipe.CName}</h2>
+        </div>
+
+        <div className="bg-[#a3968400] rounded-xl">
         {recipe.desc && (
         <div className="mt-2">
         <h2 className="text-2xl font-bold">Description</h2>
@@ -60,12 +105,19 @@ recipe ? <div>
         <p className="text-sm font-light whitespace-pre-wrap mb-3">{recipe.inst}</p>
 
         <h2 className="text-2xl font-bold">Ingredients</h2>
-        <p className="text-sm font-light whitespace-pre-wrap mb-3">{recipe.ingr}</p>
+        <p className="text-sm font-light whitespace-pre-wrap ">{recipe.ingr}</p>
         </div>
-
+        </div>
+        <div className=" flex gap-10 px-[60%] mb-4">
+        <button 
+        className="bg-[#583f1fbc] text-white px-2  shadow hover:scale-105 active:scale-95 transition-transform duration-300"
+        onClick={DeleteHandler}> Delete  </button>
+        <button 
+        className="bg-[#B99668] text-white px-2 shadow hover:scale-105 active:scale-95 transition-transform duration-300"
+        onClick={SubmitHandler}> Update </button>
+        </div>
+        </div>
       </div>
-    </div>
-  </div>
 </div> : "Recipe not found !"
   )
 }

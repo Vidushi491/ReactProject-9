@@ -11,7 +11,7 @@ const Nav = () => {
       {/* FOR MOBILE VIEW */}
 
       <div className="md:hidden relative">
-        <div className="flex items-center justify-between px-2 h-10 bg-[#442216] shadow">
+        <div className="flex items-center justify-between px-2 h-10 bg-white shadow">
           <BlurText
             text="My Recipe"
             animateBy="words"
@@ -35,7 +35,7 @@ const Nav = () => {
         )}
 
         <div
-        className={`fixed top-0 right-0 h-full w-50 bg-[#9D837F] z-50 transform ${
+        className={`fixed top-0 right-0 h-full w-50 text-[#B99668] bg-white z-50 transform ${
         open ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300`}>
         <button
@@ -97,9 +97,9 @@ const Nav = () => {
 
       {/* FOR DESKTOP VIEW */}
 
-      <div className="hidden md:flex items-center justify-between  px-4 py-1 bg-[#A39684] shadow">
+      <div className="hidden md:flex items-center justify-between  px-4 py-1 bg-white shadow">
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 text-[#B99668]">
           <BlurText
             text="My Recipe"
             animateBy="words"
@@ -108,7 +108,7 @@ const Nav = () => {
             className="font-semibold text-lg" />
           </div>
 
-        <div className="flex gap-5 font-semibold text-sm">
+        <div className="flex gap-5 font-semibold text-sm text-[#B99668]">
 
           <NavLink className={(e) => (e.isActive ? "text-white" : "")} to="/">
           <BlurText

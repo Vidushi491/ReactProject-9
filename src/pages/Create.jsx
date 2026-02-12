@@ -118,14 +118,7 @@ const Create = () => {
             ></textarea>
           </div>
 
-          <div className="md:col-span-2">
-            <button
-              className="w-full bg-white font-semibold px-2 py-2 rounded active:scale-95 transition"
-              type="submit"
-            >
-              Add Recipe
-            </button>
-          </div>
+<div className="md:col-span-2"> <button className=" border rounded-xl w-full bg-[#B99668] font-semibold px-2 py-2 active:scale-95 transition" type="submit" > Add Recipe </button> </div>
         </form>
       </div>
     </div>
