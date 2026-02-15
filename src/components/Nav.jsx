@@ -13,7 +13,7 @@ const Nav = () => {
       <div className="md:hidden relative">
         <div className="flex items-center justify-between px-2 h-10 bg-white shadow">
           <BlurText
-            text="My Recipe"
+            text="CookBook"
             animateBy="words"
             direction="top"
             delay={200}
@@ -97,11 +97,11 @@ const Nav = () => {
 
       {/* FOR DESKTOP VIEW */}
 
-      <div className="hidden md:flex items-center justify-between  px-4 py-1 bg-white shadow">
+      <div className="hidden md:flex items-center justify-between  px-4 py-1 bg-black shadow w-screen">
 
           <div className="flex items-center gap-3 text-[#B99668]">
           <BlurText
-            text="My Recipe"
+            text="CookBook"
             animateBy="words"
             direction="top"
             delay={120}
