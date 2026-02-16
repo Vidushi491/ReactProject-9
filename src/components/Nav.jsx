@@ -11,7 +11,7 @@ const Nav = () => {
       {/* FOR MOBILE VIEW */}
 
       <div className="md:hidden relative">
-        <div className="flex items-center justify-between px-2 h-10 bg-white shadow">
+        <div className="flex items-center justify-between px-2 h-10 bg-black text-white shadow">
           <BlurText
             text="CookBook"
             animateBy="words"
@@ -21,7 +21,7 @@ const Nav = () => {
 
           <button
             onClick={() => setOpen(true)}
-            className="text-xl font-semibold">
+            className="text-xl font-semibold text-white">
             ☰
           </button>
 
@@ -35,7 +35,7 @@ const Nav = () => {
         )}
 
         <div
-        className={`fixed top-0 right-0 h-full w-50 text-[#B99668] bg-white z-50 transform ${
+        className={`fixed top-0 right-0 h-full w-50 text-white bg-black z-50 transform ${
         open ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300`}>
         <button
@@ -47,7 +47,7 @@ const Nav = () => {
         <ul className="flex mt-6 p-2 flex-col gap-8 font-bold text-2xl">
         <li onClick={() => setOpen(false)}>
           <NavLink
-          className={(e) => (e.isActive ? "text-white" : "")} to="/">
+          className={(e) => (e.isActive ? "text-[#B99668]" : "")} to="/">
           <BlurText
           text="Home"
           animateBy="words"
@@ -59,7 +59,7 @@ const Nav = () => {
 
         <li onClick={() => setOpen(false)}>
           <NavLink
-          className={(e) => (e.isActive ? "text-white" : "")} to="/recipes">
+          className={(e) => (e.isActive ? "text-[#B99668]" : "")} to="/recipes">
           <BlurText
           text="Recipes"
           animateBy="words"
@@ -71,7 +71,7 @@ const Nav = () => {
 
         <li onClick={() => setOpen(false)}>
           <NavLink
-          className={(e) => (e.isActive ? "text-white" : "")} to="/create-recipes">
+          className={(e) => (e.isActive ? "text-[#B99668]" : "")} to="/create-recipes">
           <BlurText
           text="Create"
           animateBy="words"
@@ -82,7 +82,7 @@ const Nav = () => {
         </li>
         <li onClick={() => setOpen(false)}>
           <NavLink
-          className={(e) => (e.isActive ? "text-white" : "")} to="/about">
+          className={(e) => (e.isActive ? "text-[#B99668]" : "")} to="/about">
           <BlurText
           text="About"
           animateBy="words"
@@ -99,7 +99,7 @@ const Nav = () => {
 
       <div className="hidden md:flex items-center justify-between  px-4 py-1 bg-black shadow w-screen">
 
-          <div className="flex items-center gap-3 text-[#B99668]">
+          <div className="flex items-center gap-3 text-white">
           <BlurText
             text="CookBook"
             animateBy="words"
@@ -108,9 +108,9 @@ const Nav = () => {
             className="font-semibold text-lg" />
           </div>
 
-        <div className="flex gap-5 font-semibold text-sm text-[#B99668]">
+        <div className="flex gap-5 font-semibold text-sm text-white">
 
-          <NavLink className={(e) => (e.isActive ? "text-white" : "")} to="/">
+          <NavLink className={(e) => (e.isActive ? "text-[#B99668]" : "")} to="/">
           <BlurText
             text="Home"
             animateBy="words"
@@ -120,7 +120,7 @@ const Nav = () => {
           </NavLink>
 
           <NavLink
-            className={(e) => (e.isActive ? "text-white" : "")} to="/recipes">
+            className={(e) => (e.isActive ? "text-[#B99668]" : "")} to="/recipes">
           <BlurText
             text="Recipes"
             animateBy="words"
@@ -130,7 +130,7 @@ const Nav = () => {
           </NavLink>
 
           <NavLink
-            className={(e) => (e.isActive ? "text-white" : "")} to="/create-recipes">
+            className={(e) => (e.isActive ? "text-[#B99668]" : "")} to="/create-recipes">
           <BlurText
             text="Create"
             animateBy="words"
@@ -140,7 +140,7 @@ const Nav = () => {
           </NavLink>
 
           <NavLink
-            className={(e) => (e.isActive ? "text-white" : "")} to="/about" >
+            className={(e) => (e.isActive ? "text-[#B99668]" : "")} to="/about" >
           <BlurText
             text="About"
             animateBy="words"
