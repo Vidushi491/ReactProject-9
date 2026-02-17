@@ -97,7 +97,7 @@ const Nav = () => {
 
       {/* FOR DESKTOP VIEW */}
 
-      <div className="hidden md:flex items-center justify-between  px-4 py-1 bg-black shadow w-screen">
+      <div className="hidden md:flex items-center justify-between  px-4 py-1 bg-black shadow">
 
           <div className="flex items-center gap-3 text-white">
           <BlurText
