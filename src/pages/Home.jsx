@@ -55,19 +55,26 @@ const Home = () => {
         </div>
 
         {/* ------------------------------- scroll 3 ----------------------------- */}
-        <div className="h-screen text-white bg-black flex flex-col justify-center">
+        <div className="h-screen text-white bg-black flex flex-col justify-center mt-20">
           <h1 className="font-bold text-4xl text-center">Try At Your Home </h1>
           <p className="font-light text-sm mt-2 text-center">This are some of our best recipes for you to try at home!</p>
-          <div className="flex flex-wrap p-10 divblack ">
-            <div className="w-45 h-45 bg-white">Pizza</div>
-            <div className="w-45 h-45 bg-white">Coffee</div>
-            <div className="w-45 h-45 bg-white">Rolls</div>
-            <div className="w-45 h-45 bg-white">IceCream</div>
-            <div className="w-45 h-45 bg-white">Noodels</div>
-            <div className="w-45 h-45 bg-white">Fries</div>
+          <div className="flex  flex-wrap px-10 py-10 space-x-10 space-y-10 justify-center">
+            <div className="w-50 h-70 bg-black transition-transform hover:scale-105 active:scale-100">
+              <img src="/src/assets/pizza.png" alt="oops!!" className="w-full h-full object-cover"/>
+            </div>
+            <div className="w-50 h-70 bg-black transition-transform hover:scale-105 active:scale-100">
+              <img src="/src/assets/icecream.jpg" alt="oops!!" className="w-full h-full object-cover"/></div>
+            <div className="w-50 h-70 bg-black transition-transform hover:scale-105 active:scale-100">
+              <img src="/src/assets/roll.png" alt="oops!!" className="w-full h-full object-cover"/></div>
+            <div className="w-50 h-70 bg-black transition-transform hover:scale-105 active:scale-100">
+              <img src="/src/assets/shake3.png" alt="oops!!" className="w-full h-50 object-cover"/>
+              Delicious Mango Shake <p className="text-xs mt-1 w-50">A refreshing and creamy drink made from ripe mangoes and chilled milk.</p></div>
           </div>
         </div>
           {/* ------------------------------- scroll 4 ----------------------------- */}
+          <div>
+
+          </div>
   </div>
 </div>
   )
