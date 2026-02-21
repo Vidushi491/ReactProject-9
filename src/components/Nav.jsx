@@ -101,7 +101,7 @@ const Nav = () => {
 
           <div className="flex items-center gap-3 text-white">
           <BlurText
-            text="CookBook"
+            text="RecipeBook"
             animateBy="words"
             direction="top"
             delay={120}
