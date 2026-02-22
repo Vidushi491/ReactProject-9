@@ -21,7 +21,7 @@ const Home = () => {
           </div>
           {/* Right Side */}
           <div className="w-3/5 flex flex-col items-center p-4 mt-18">
-             <h1 className=" text-5xl font-bold text-center mb-8 text-[#B99668]">Recipe Book</h1>
+            <h1 className=" text-5xl font-bold text-center mb-8 text-[#B99668]">Recipe Book</h1>
             <h2 className=" text-2xl font-bold mb-2">From Your Kitchen To your World </h2>
             <p className="text-sm font-light text-center px-13">Create Your Own Recipe And Submit Heare to Help Others If You Really Want To This Is The Largets Hub Where People Share there Different Recipies So that People Can Follow and Can Make There Own food Delicious Without Getting Confused...</p>
           </div>
@@ -30,7 +30,7 @@ const Home = () => {
         {/* ------------------------------- scroll 2 ----------------------------- */}
         <div className="h-screen flex flex-col justify-center">
 
-        <div className="flex flex-row justify-between items-center px-10 mt-15">
+          <div className="flex flex-row justify-between items-center px-10 mt-15">
             {/* left side */}
             <div className=" flex flex-col flex-5 items-center p-2">
               <h2 className="text-3xl font-bold mb-4">Italian Tiramisu </h2>
@@ -40,7 +40,7 @@ const Home = () => {
             <div className="flex-3 rounded-2xl overflow-hidden">
               <img src="/src/assets/fries.jpg"
                 alt="oops!!"
-                className=" object-contain h-75 w-full"/>
+                className=" object-contain h-75 w-full" />
             </div>
           </div>
 
@@ -60,57 +60,71 @@ const Home = () => {
           <div className="flex flex-wrap px-10 py-10 space-x-10 space-y-10 justify-center mt-10">
 
             <div className="w-50 h-70 bg-black transition-transform hover:scale-105 active:scale-100 text-center">
-              <img src="/src/assets/burger.jpg" alt="oops!!" className="w-full h-50 object-cover"/>
-                Burger<p className="text-xs mt-1 w-50">A juicy patty layered with fresh veggies and cheese inside a soft bun</p>
+              <img src="/src/assets/burger.jpg" alt="oops!!" className="w-full h-50 object-cover" />
+              Burger<p className="text-xs mt-1 w-50">A juicy patty layered with fresh veggies and cheese inside a soft bun</p>
             </div>
 
             <div className="w-50 h-70 bg-black transition-transform hover:scale-105 active:scale-100 text-center">
-              <img src="/src/assets/tacoes.jpg" alt="oops!!" className="w-full h-50 object-center"/>
-               Tacoes <p className="text-xs mt-1 w-50">A flavorful Mexican dish made with crispy or soft tortillas filled with meat, veggies, and sauces.</p>
+              <img src="/src/assets/tacoes.jpg" alt="oops!!" className="w-full h-50 object-center" />
+              Tacoes <p className="text-xs mt-1 w-50">A flavorful Mexican dish made with crispy or soft tortillas filled with meat, veggies, and sauces.</p>
             </div>
 
             <div className="w-50 h-70 bg-black transition-transform hover:scale-105 active:scale-100 text-center">
-              <img src="/src/assets/roll.jpg" alt="oops!!" className="w-full h-50 object-cover"/>
+              <img src="/src/assets/roll.jpg" alt="oops!!" className="w-full h-50 object-cover" />
               Roll <p className="text-xs mt-1 w-50">A tasty wrap filled with veggies, meat, or paneer and rolled in soft flatbread.</p>
             </div>
 
             <div className="w-50 h-70 bg-black transition-transform hover:scale-105 active:scale-100 text-center">
-              <img src="/src/assets/sandwich2.jpg" alt="oops!!" className="w-full h-50 object-cover"/>
-              SandWich <p className="text-xs mt-1 w-50">A quick and easy meal made by placing fillings between slices of bread.</p>
+              <img src="/src/assets/sandwich2.jpg" alt="oops!!" className="w-full h-50 object-cover" />
+              Sandwich <p className="text-xs mt-1 w-50">A quick and easy meal made by placing fillings between slices of bread.</p>
             </div>
 
           </div>
         </div >
-          {/* ------------------------------- scroll 4 ----------------------------- */}
-         <div className="h-screen flex flex-col justify-center">
+        {/* ------------------------------- scroll 4 ----------------------------- */}
+        <div className="h-screen flex flex-col justify-center">
 
-        <div className="flex flex-row justify-between items-center px-10 mt-15">
+          <div className="flex flex-row justify-between items-center mt-16">
             {/* left side */}
-            <div className="flex-3 rounded-2xl overflow-hidden">
+            <div className="flex-2 overflow-hidden transition-transform hover:scale-105 active:scale-100 px-4">
               <img src="/src/assets/pizza.jpg"
                 alt="oops!!"
-                className=" object-contain h-75 w-full"/>
+                className=" object-contain h-full w-full" />
             </div>
             {/* right side */}
-            <div className=" flex flex-col flex-5 items-center p-2">
+            <div className=" flex flex-col flex-5 items-center ">
               <h2 className="text-3xl font-bold mb-4">Italian Pizza</h2>
-              <p className="mt-3 text-sm font-extralight text-center">
-              Preheat the oven to 475°F (245°C),
-              Roll out the pizza dough and spread tomato sauce evenly,
-              Top with slices of fresh mozzarella and fresh basil leaves,
-              Drizzle with olive oil and season with salt and pepper,
-              Bake in the preheated oven for 12-15 minutes or until the crust is golden brown,
-              Slice and serve hot.</p>
+              <p className="mt-3 text-sm font-extralight text-center px-16">
+                Preheat the oven to 475°F (245°C),
+                Roll out the pizza dough and spread tomato sauce evenly,
+                Top with slices of fresh mozzarella and fresh basil leaves,
+                Drizzle with olive oil and season with salt and pepper,
+                Bake in the preheated oven for 12-15 minutes or until the crust is golden brown,
+                Slice and serve hot.</p>
             </div>
           </div>
 
           {/* bottom part */}
-          <div className=" flex text-black justify-center items-center mt-15 ">
-            <div className="bg-white w-full h-30 rounded-2xl font-bold text-lg transition-transform hover:scale-105 text-center p-2">Cookie<p className="font-extralight text-sm p-2">It's a delecious cookie with choco chips</p>
+          <div className=" flex flex-row bg-white text-black mt-5 space-x-10 space-y-10 justify-center items-center px-10">
+
+              <div className="bg-white w-full h-40 font-bold text-lg p-2">Recipe Book
+              </div>
+
+              <div className="bg-white w-full h-40 font-bold text-lg p-2">About Us
+              <p className="font-extralight text-sm">We are building a platform for food lovers to share recipes and discover new dishes.</p>
+              </div>
+
+              <div className="bg-white w-full h-40 font-bold text-lg p-2">Services
+              <p className="font-extralight"></p>
+              </div>
+
+              <div className="bg-white w-full h-40 font-bold text-lg p-2">Contact Us
+              <p className="font-extralight"></p>
+              </div>
+              
+          </div>
           </div>
         </div>
-      </div>
-    </div>
       </div>
   )
 }
