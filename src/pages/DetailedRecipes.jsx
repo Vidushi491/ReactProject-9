@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { RecipeContext } from "../context/RecipeContext"
 import { useNavigate, useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -8,6 +8,11 @@ export const DetailedRecipes = () => {
   const {data , setData} = useContext(RecipeContext);
   const navigate = useNavigate();
   const params = useParams();
+
+  // Scroll to top when component mounts or recipe changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [params.id]);
   const recipe = data.find((recipe) => params.id == recipe.id);
   const {register, handleSubmit } = useForm({
     defaultValues:{
@@ -37,7 +42,7 @@ export const DetailedRecipes = () => {
   };
 
   return (
-    recipe ? <div>
+    recipe ? <div className="bg-white min-h-screen">
       {/* ............for mobile............ */}
       <div className="md:hidden">
         <div className="mt-4 mb-4 flex justify-center items-center">

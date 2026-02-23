@@ -3,9 +3,11 @@ import MainRoutes from "./routes/MainRoutes"
 
 const App = () => {
   return (
-  <div>
-    <Nav/>
-    <MainRoutes/>
+  <div className="bg-black">
+    <Nav />
+    <div className="pt-10 md:pt-12">
+      <MainRoutes/>
+    </div>
   </div>
   )
 }

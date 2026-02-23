@@ -6,7 +6,7 @@ const Nav = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full">
+    <div className="w-full fixed top-0 z-50">
 
       {/* FOR MOBILE VIEW */}
 

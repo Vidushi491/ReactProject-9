@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import BlurText from "../pages/BlurText";
 import { nanoid } from "nanoid";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { RecipeContext } from "../context/RecipeContext";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
@@ -10,6 +10,12 @@ const Create = () => {
   const navigate = useNavigate();
   const { register, handleSubmit, reset } = useForm();
   const { data, setData } = useContext(RecipeContext);
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const SubmitHandler = (recipe) => {
     recipe.id = nanoid();
     setData([...data, recipe]);
@@ -19,7 +25,7 @@ const Create = () => {
   };
 
   return (
-    <div>
+    <div className="bg-white min-h-screen">
       {/* for mobile view  & Laptop View*/}
       <div className="min-h-screen  p-4 md:p-10 ">
         <h1 className="mb-5 flex justify-center">
