@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div className='bg-black text-white'>
 
-      {/* ..............for mobile............ */}
+                          {/* ..............for mobile............ */}
 <div className="md:hidden">
 
   {/* ---Scroll 1 --- */}
@@ -42,7 +42,7 @@ const Home = () => {
 
   {/* ---Scroll 2 --- */}
 
-    <div className="h-screen flex items-center flex-col mt-10">
+    <div className="h-screen flex flex-col justify-center items-center">
     <h2 className="text-3xl font-bold mb-2">Italian Tiramisu </h2>
     <div className=''>
     <div className="flex-3 rounded-2xl overflow-hidden">
@@ -55,41 +55,96 @@ const Home = () => {
     <div className='p-2 flex flex-wrap justify-center gap-4 bg-black'>
     <div 
     onClick={() => navigate('/recipes')} 
-    className="bg-white text-black w-35 h-40 rounded-2xl font-bold text-lg transition-transform hover:scale-105 text-center p-2 cursor-pointer ">
+    className="bg-white text-black w-35 h-35 rounded-2xl font-bold text-lg transition-transform hover:scale-105 text-center p-2 cursor-pointer ">
     Cookie
-    <p className="font-extralight text-sm p-1">It's a delecious cookie with choco chips</p>
+    <p className="font-extralight text-sm p-1 mt-2">It's a delecious cookie with choco chips</p>
     </div> 
     <div 
     onClick={() => navigate('/recipes')} 
-    className="bg-white text-black w-35 h-40 rounded-2xl font-bold text-lg transition-transform hover:scale-105 text-center p-2 cursor-pointer">
+    className="bg-white text-black w-35 h-35 rounded-2xl font-bold text-lg transition-transform hover:scale-105 text-center p-2 cursor-pointer">
     Blueberry
-    <p className="font-extralight text-sm p-1">The shake in purple with garnishing of chocolates</p>
+    <p className="font-extralight text-sm p-1 mt-2">The shake in purple with garnishing of chocolates</p>
     </div>
     <div 
     onClick={() => navigate('/recipes')} 
-    className="bg-white text-black w-35 h-40 rounded-2xl font-bold text-lg transition-transform hover:scale-105 text-center p-2 cursor-pointer">
+    className="bg-white text-black w-35 h-35 rounded-2xl font-bold text-lg transition-transform hover:scale-105 text-center p-2 cursor-pointer">
     Mango Lassi
-    <p className="font-extralight text-sm p-1">The little pices of mangos in yellow flavour lassi</p>
+    <p className="font-extralight text-sm p-1 mt-2">The little pices of mangos in yellow flavour lassi</p>
     </div>
     <div 
     onClick={() => navigate('/recipes')} 
-    className="bg-white text-black w-35 h-40 rounded-2xl font-bold text-lg transition-transform hover:scale-105 text-center p-2 cursor-pointer">
+    className="bg-white text-black w-35 h-35 rounded-2xl font-bold text-lg transition-transform hover:scale-105 text-center p-2 cursor-pointer">
     Tiramasu
-    <p className="font-extralight text-sm p-1">The Italian dessert with coffee and mascarpone</p>
+    <p className="font-extralight text-sm p-1 mt-2">The Italian dessert with coffee and mascarpone</p>
     </div>
     </div>
     </div>
     </div>
   
   {/* scroll 3 */}
-
-  <div>
-  
-  </div>
-
-</div>
-
-
+    <div className="h-screen flex flex-col justify-center items-center p-4">
+    <h1 className="font-bold text-3xl text-center mb-2">Try At Your Home </h1>
+    <p className="font-light text-sm text-center mb-4">This are some of our best recipes for you to try at home!</p>
+    <div className="flex flex-wrap gap-5 justify-center items-center text-center">
+    
+    <div className="font-bold text-lg transition-transform hover:scale-105 active:scale-100 text-white w-35">
+    <img  
+    src={burgerImg} 
+    alt="Burger" 
+    onClick={() => navigate('/recipes')} 
+    className="w-full h-35 object-cover mb-2 cursor-pointer rounded-lg"/>
+    Burger
+    <p className="text-xs mt-1 font-light">A juicy patty layered with fresh veggies and cheese inside a soft bun</p>
+    </div>
+    
+    <div className="font-bold text-lg transition-transform hover:scale-105 active:scale-100 text-white w-35">
+    <img 
+    src={tacoesImg} alt="Tacoes" 
+    onClick={() => navigate('/recipes')} 
+    className="w-full h-35 object-cover mb-2 cursor-pointer rounded-lg"/>
+    Tacoes 
+    <p className="text-xs mt-1 font-light">A flavorful Mexican dish made with crispy or soft tortillas filled with veggies, and sauces.</p>
+    </div>
+    
+    <div className="font-bold text-lg transition-transform hover:scale-105 active:scale-100 text-white w-35">
+    <img src={rollImg} 
+    alt="Roll" 
+    onClick={() => navigate('/recipes')} 
+    className="w-full h-35 object-cover mb-2 cursor-pointer rounded-lg"/>
+    Roll 
+    <p className="text-xs mt-1 font-light">A tasty wrap filled with veggies, meat, or paneer and rolled in soft flatbread.</p>
+    </div>
+    
+    <div className="font-bold text-lg transition-transform hover:scale-105 active:scale-100 text-white w-35">
+    <img src={sandwich2Img} 
+    alt="Sandwich" 
+    onClick={() => navigate('/recipes')} 
+    className="w-full h-35 object-cover mb-2 cursor-pointer rounded-lg"/>
+    Sandwich 
+    <p className="text-xs mt-1 font-light">A quick meal made by placing fillings between slices of bread.</p>
+    </div>
+    
+    </div>
+    </div>
+    {/* --- scroll 4 --- */}
+    <div className="h-screen flex flex-col justify-center items-center p-4">
+    <h2 className="text-3xl font-bold mb-4 text-center">Italian Pizza</h2>
+    <div className="flex flex-col items-center max-w-md">
+    <div 
+    onClick={() => navigate('/recipe/detail/1')}
+    className="overflow-hidden transition-transform hover:scale-105 active:scale-100 cursor-pointer mb-4">
+    <img src={pizzaImg}
+    alt="Italian Pizza"
+    className="object-cover w-full h-60 rounded-lg" />
+    </div>
+    <p className="text-sm font-light text-center">
+    Preheat the oven to 475°F (245°C), Roll out the pizza dough and spread tomato sauce evenly, 
+    Top with fresh mozzarella and basil leaves, Drizzle with olive oil and bake for 12-15 minutes.
+    </p>
+    </div>
+    </div>
+    </div>
+    
       {/* ..............for Laptop............ */}
 
       <div className="hidden md:flex flex-col ">
@@ -134,7 +189,7 @@ const Home = () => {
           onClick={() => navigate('/recipes')} 
           className="bg-white w-48 h-30 rounded-2xl font-bold text-lg transition-transform hover:scale-105 text-center p-2 cursor-pointer">
           Cookie
-          <p className="font-extralight text-sm p-2">It's a delecious cookie with choco chips</p>
+          <p className="font-extralight text-sm p-2 ">It's a delecious cookie with choco chips</p>
           </div>
           <div 
           onClick={() => navigate('/recipes')} 
