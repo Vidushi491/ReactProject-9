@@ -7,7 +7,17 @@ const About = () => {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen p-4">About</div>
+    <div className="bg-white min-h-screen ">
+      {/* ---for mobile view--- */}
+      <div className="md:hidden">
+
+      </div>
+      {/* ---for laptop view--- */}
+      <div className="hidden md:flex flex-col">
+        <h1 className='text-4xl font-bold text-center p-4'>About Us</h1>
+
+      </div>
+    </div>
   )
 }
 

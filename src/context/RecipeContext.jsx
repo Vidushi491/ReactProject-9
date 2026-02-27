@@ -27,7 +27,7 @@ const RecipeProvider = ({ children }) => {
         "Bake in the preheated oven for 12-15 minutes or until the crust is golden brown.",
         "Slice and serve hot."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
+      "image": "https://i.pinimg.com/736x/9d/d0/09/9dd009e9fa887b23f36ac4a5a6433a7b.jpg",
     },
     {
       "id": 2,
@@ -51,7 +51,7 @@ const RecipeProvider = ({ children }) => {
         "Pour soy sauce over the stir-fry and toss to combine.",
         "Serve over cooked rice."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/2.webp",
+      "image": "https://i.pinimg.com/1200x/e3/17/af/e317afca1480d9b5c8a742b8dcea94f6.jpg",
     },
     {
       "id": 3,
@@ -77,7 +77,7 @@ const RecipeProvider = ({ children }) => {
         "Bake for 10-12 minutes or until edges are golden brown.",
         "Allow cookies to cool on the baking sheet for a few minutes before transferring to a wire rack."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/3.webp",
+      "image": "https://i.pinimg.com/736x/31/57/a7/3157a7660522748ee9f3b90be45e69ba.jpg",
     },
     {
       "id": 4,
@@ -101,7 +101,7 @@ const RecipeProvider = ({ children }) => {
         "Combine the Alfredo sauce with cooked pasta.",
         "Garnish with fresh parsley before serving."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/4.webp",
+      "image": "https://i.pinimg.com/736x/0f/61/2f/0f612fd97b2a901bb95547497e5e7d07.jpg",
     },
     {
       "id": 5,
@@ -123,7 +123,7 @@ const RecipeProvider = ({ children }) => {
         "Dice the cooked chicken and mix it with the mango salsa.",
         "Serve over cooked rice."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/5.webp",
+      "image": "https://i.pinimg.com/1200x/8d/b5/dd/8db5ddfd1828d38ddbb00a0f628d0b3a.jpg",
     },
     {
       "id": 6,
@@ -144,7 +144,7 @@ const RecipeProvider = ({ children }) => {
         "Season with salt and pepper to taste.",
         "Chill in the refrigerator before serving."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/6.webp",
+      "image": "https://i.pinimg.com/1200x/44/4f/62/444f623415c4d384d1b478951c49e06b.jpg",
     },
     {
       "id": 7,
@@ -166,7 +166,7 @@ const RecipeProvider = ({ children }) => {
         "Top each toasted baguette slice with the tomato-basil mixture.",
         "Drizzle with balsamic glaze before serving."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/7.webp",
+      "image": "https://i.pinimg.com/1200x/4a/f4/7a/4af47a06af99d551d242eebb6a5071b2.jpg",
     },
     {
       "id": 8,
@@ -190,7 +190,7 @@ const RecipeProvider = ({ children }) => {
         "Stir until everything is coated and heated through.",
         "Serve over cooked white rice."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/8.webp",
+      "image": "https://i.pinimg.com/736x/3d/33/c6/3d33c6ea36b2d897b57271e3c1d2d189.jpg",
     },
     {
       "id": 9,
@@ -210,7 +210,7 @@ const RecipeProvider = ({ children }) => {
         "Season with salt and pepper to taste.",
         "Serve immediately as a refreshing salad."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/9.webp",
+      "image": "https://i.pinimg.com/736x/86/2a/44/862a44cb44c1b72a5258d75f3981f988.jpg",
     },
     {
       "id": 10,
@@ -234,7 +234,7 @@ const RecipeProvider = ({ children }) => {
         "Toss cooked linguine in the shrimp scampi sauce.",
         "Garnish with chopped fresh parsley before serving."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/10.webp",
+      "image": "https://i.pinimg.com/736x/77/29/d8/7729d8dfcbf94c728bc56109bc6926cb.jpg",
     },
     {
       "id": 11,
@@ -261,7 +261,7 @@ const RecipeProvider = ({ children }) => {
         "Cover and cook on low heat until the rice is fully cooked and aromatic.",
         "Serve hot, garnished with additional coriander and mint leaves."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/11.webp",
+      "image": "https://i.pinimg.com/1200x/27/6c/60/276c600420fa1a28e357ee10f57d8c87.jpg",
     },
     {
       "id": 12,
@@ -287,7 +287,7 @@ const RecipeProvider = ({ children }) => {
         "Cover and simmer until the chicken is tender and the oil separates from the masala.",
         "Garnish with fresh coriander leaves and serve hot with naan or rice."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/12.webp",
+      "image": "https://i.pinimg.com/736x/0c/6f/17/0c6f17efc87edde5dce99ef30be39dd9.jpg",
     },
     {
       "id": 13,
@@ -314,7 +314,7 @@ const RecipeProvider = ({ children }) => {
         "Cover and simmer until the potatoes are tender and the masala is well-cooked.",
         "Garnish with fresh coriander leaves and serve hot with naan or rice."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/13.webp",
+      "image": "https://i.pinimg.com/1200x/de/bb/0a/debb0a9f41ad81e44e7cc966e03251f5.jpg",
     },
     {
       "id": 14,
@@ -341,7 +341,7 @@ const RecipeProvider = ({ children }) => {
         "Heat cooking oil in a pan and shallow fry the kebabs until browned on both sides.",
         "Serve hot with naan or mint chutney."
       ], 
-      "image": "https://cdn.dummyjson.com/recipe-images/14.webp",
+      "image": "https://i.pinimg.com/1200x/5e/c5/54/5ec554591b26c2e1f15bacd5757c7ba0.jpg",
     },
     {
       "id": 15,
@@ -364,7 +364,7 @@ const RecipeProvider = ({ children }) => {
         "Cook the rotis on a griddle until golden brown.",
         "Serve hot saag with makki di roti and a dollop of ghee."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/15.webp",
+      "image": "https://i.pinimg.com/736x/2a/ae/83/2aae834323edc03eded3a6c3e629ba1b.jpg",
     },
     {
       "id": 16,
@@ -390,7 +390,7 @@ const RecipeProvider = ({ children }) => {
         "Top with green onions, soft-boiled eggs, grilled chicken slices, and nori.",
         "Serve hot and enjoy the authentic Japanese ramen!"
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/16.webp",
+      "image": "https://i.pinimg.com/1200x/20/e9/90/20e9901c7f4aa1293a184b689565fbae.jpg",
     },
     {
       "id": 17,
@@ -417,7 +417,7 @@ const RecipeProvider = ({ children }) => {
         "Stir in olives and garnish with fresh cilantro before serving.",
         "Serve this flavorful Moroccan dish with couscous or crusty bread."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/17.webp",
+      "image": "https://i.pinimg.com/736x/17/72/10/177210d125f03e6fd67db5e43410dea2.jpg",
     },
     {
       "id": 18,
@@ -442,7 +442,7 @@ const RecipeProvider = ({ children }) => {
         "Mix everything together before enjoying this delicious Korean bibimbap!",
         "Feel free to customize with additional vegetables or protein."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/18.webp",
+      "image": "https://i.pinimg.com/1200x/6b/c2/4c/6bc24c0425827ff2c6805499ad88f013.jpg",
     },
     {
       "id": 19,
@@ -474,7 +474,7 @@ const RecipeProvider = ({ children }) => {
         "Bake for 40-45 minutes until golden brown. Let it cool before slicing.",
         "Serve slices of moussaka warm and enjoy this Greek classic!"
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/19.webp",
+      "image": "https://i.pinimg.com/736x/5d/55/43/5d554395e881c164546b7e1cda444b3d.jpg",
     },
     {
       "id": 20,
@@ -499,7 +499,7 @@ const RecipeProvider = ({ children }) => {
         "Sprinkle kasuri methi, sugar, and salt. Simmer until the chicken is fully cooked.",
         "Serve this creamy butter chicken over rice or with naan for an authentic Pakistani/Indian experience."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/20.webp",
+      "image": "https://i.pinimg.com/736x/51/07/d3/5107d33d3b8313f0ad2db164d0ab85d9.jpg",
     },
     {
       "id": 21,
@@ -522,7 +522,7 @@ const RecipeProvider = ({ children }) => {
         "Garnish with fresh basil leaves.",
         "Serve hot over jasmine rice and enjoy this Thai classic!"
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/21.webp",
+      "image": "https://i.pinimg.com/1200x/03/3f/cc/033fcc670a1e1833fc1ca94847c59366.jpg",
     },
     {
       "id": 22,
@@ -542,7 +542,7 @@ const RecipeProvider = ({ children }) => {
         "Pour into glasses and garnish with a sprinkle of cardamom.",
         "Enjoy this refreshing Mango Lassi!"
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/22.webp",
+      "image": "https://i.pinimg.com/1200x/f1/61/da/f161da91bcc725cd352b2e239afc8d9c.jpg",
     },
     {
       "id": 23,
@@ -565,7 +565,7 @@ const RecipeProvider = ({ children }) => {
         "Chill in the refrigerator for a few hours before serving.",
         "Indulge in the decadence of this classic Italian Tiramisu!"
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/23.webp",
+      "image": "https://i.pinimg.com/736x/d7/dd/7e/d7dd7ea6a3953b51d0eae2a968c1413c.jpg",
     },
     {
       "id": 24,
@@ -588,7 +588,7 @@ const RecipeProvider = ({ children }) => {
         "Serve the kebabs on flatbread with a drizzle of tahini sauce.",
         "Enjoy these flavorful Turkish Kebabs with your favorite sides."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/24.webp",
+      "image": "https://i.pinimg.com/736x/1d/6e/3f/1d6e3f93f02b740c53b0afe073398e75.jpg",
     },
     {
       "id": 25,
@@ -607,7 +607,7 @@ const RecipeProvider = ({ children }) => {
         "Add chia seeds for extra nutrition and blend briefly.",
         "Pour into a glass and enjoy this nutritious Blueberry Banana Smoothie!"
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/25.webp",
+      "image": "https://i.pinimg.com/736x/e2/bd/c9/e2bdc9137b5e1b48dd9e4febfbb6c0de.jpg",
     },
     {
       "id": 26,
@@ -625,7 +625,7 @@ const RecipeProvider = ({ children }) => {
         "Serve with lime wedges for squeezing over the top.",
         "Enjoy this delicious and flavorful Mexican Street Corn!"
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/26.webp",
+      "image": "https://i.pinimg.com/1200x/3b/74/5d/3b745d8760f8896caa69b7423ef348b3.jpg",
     },
     {
       "id": 27,
@@ -649,7 +649,7 @@ const RecipeProvider = ({ children }) => {
         "Serve hot with a dollop of sour cream on top.",
         "Enjoy the hearty and comforting flavors of Russian Borscht!"
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/27.webp",
+      "image": "https://i.pinimg.com/1200x/03/31/ee/0331eeca1315d75aa7cf22f5547cafc0.jpg",
     },
     {
       "id": 28,
@@ -674,7 +674,7 @@ const RecipeProvider = ({ children }) => {
         "Place a spoonful of the potato mixture in the center, fold, and serve hot.",
         "Pair with coconut chutney for a delicious South Indian meal."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/28.webp",
+      "image": "https://i.pinimg.com/736x/1a/21/a6/1a21a634af46a24e5760050d103fe4df.jpg",
     },
     {
       "id": 29,
@@ -696,7 +696,7 @@ const RecipeProvider = ({ children }) => {
         "Drizzle with tahini sauce and wrap tightly.",
         "Enjoy this Lebanese Falafel Wrap filled with fresh and flavorful ingr!"
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/29.webp",
+      "image": "https://i.pinimg.com/736x/80/ca/71/80ca713e348f856db7b680c5cfc60e63.jpg",
     },
     {
       "id": 30,
@@ -714,7 +714,7 @@ const RecipeProvider = ({ children }) => {
         "Sip and enjoy the refreshing taste of the Brazilian Caipirinha!",
         "Adjust sugar and lime to suit your taste preferences."
       ],
-      "image": "https://cdn.dummyjson.com/recipe-images/30.webp",
+      "image": "https://i.pinimg.com/736x/15/0a/5e/150a5e8beae0bdbc3a0e2d8c95c65a2b.jpg",
     }
   ],
     );

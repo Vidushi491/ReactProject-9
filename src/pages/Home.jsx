@@ -20,8 +20,8 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  return (
-    <div className='bg-black text-white'>
+return (
+<div className='bg-black text-white'>
 
                           {/* ..............for mobile............ */}
 <div className="md:hidden">
@@ -30,29 +30,28 @@ const Home = () => {
 
     <div className="flex flex-col items-center justify-center mt-5">
     <h1 className=" text-3xl mb-4 font-bold text-center text-[#B99668]">Recipe Book</h1>
-    <h2 className=" text-sm font-bold mb-4">From Your Kitchen To your World </h2>
+    <h2 className=" text-sm font-bold mb-4">From Your Kitchen To This World 🌍</h2>
     <p className="text-sm font-extralight text-center px-6">Create Your Own Recipe This Is The Largets Hub Where People Share there  Recipies So that People Can Follow and Can Make There Own food Delicious Without Getting Confused...</p>
     </div>
     <div className="p-1">
     <img src={chefImg}
     onClick={() => navigate('/create-recipes')} 
     alt="Chef preparing food"
-    className="w-full h-full object-top p-2 transition-transform hover:scale-105 cursor-pointer" />
+    className="w-full h-full object-top p-2 transition-transform hover:scale-105 cursor-pointer mb-15"/>
     </div>
 
   {/* ---Scroll 2 --- */}
 
-    <div className="h-screen flex flex-col justify-center items-center">
-    <h2 className="text-3xl font-bold mb-2">Italian Tiramisu </h2>
+    <div className="h-screen flex flex-col justify-center items-center mt-15">
+    <h2 className="text-3xl font-bold">Italian Tiramisu </h2>
     <div className=''>
     <div className="flex-3 rounded-2xl overflow-hidden">
     <img src={friesImg}
     alt="Delicious fries"
     className="object-contain h-75 w-full transition-transform hover:scale-105" />
-    <p className="mt-3 text-sm font-extralight text-center mb-4">In a bowl, whip heavy cream until stiff peaks form.,In another bowl, mix mascarpone cheese and sugar until smooth.,Gently fold the whipped cream into the mascarpone mixture.</p>
     </div>
     {/* bottom part */}
-    <div className='p-2 flex flex-wrap justify-center gap-4 bg-black'>
+    <div className='p-2 flex flex-wrap justify-center gap-5 mt-10 bg-black mb-10'>
     <div 
     onClick={() => navigate('/recipes')} 
     className="bg-white text-black w-35 h-35 rounded-2xl font-bold text-lg transition-transform hover:scale-105 text-center p-2 cursor-pointer ">
@@ -82,10 +81,10 @@ const Home = () => {
     </div>
   
   {/* scroll 3 */}
-    <div className="h-screen flex flex-col justify-center items-center p-4">
+    <div className="h-screen flex flex-col justify-center items-center p-4 mt-10">
     <h1 className="font-bold text-3xl text-center mb-2">Try At Your Home </h1>
-    <p className="font-light text-sm text-center mb-4">This are some of our best recipes for you to try at home!</p>
-    <div className="flex flex-wrap gap-5 justify-center items-center text-center">
+    <p className="font-light text-sm text-center mb-8">This are some of our best recipes for you to try at home!</p>
+    <div className="flex flex-wrap gap-6 justify-center items-center text-center">
     
     <div className="font-bold text-lg transition-transform hover:scale-105 active:scale-100 text-white w-35">
     <img  
@@ -94,7 +93,6 @@ const Home = () => {
     onClick={() => navigate('/recipes')} 
     className="w-full h-35 object-cover mb-2 cursor-pointer rounded-lg"/>
     Burger
-    <p className="text-xs mt-1 font-light">A juicy patty layered with fresh veggies and cheese inside a soft bun</p>
     </div>
     
     <div className="font-bold text-lg transition-transform hover:scale-105 active:scale-100 text-white w-35">
@@ -103,7 +101,6 @@ const Home = () => {
     onClick={() => navigate('/recipes')} 
     className="w-full h-35 object-cover mb-2 cursor-pointer rounded-lg"/>
     Tacoes 
-    <p className="text-xs mt-1 font-light">A flavorful Mexican dish made with crispy or soft tortillas filled with veggies, and sauces.</p>
     </div>
     
     <div className="font-bold text-lg transition-transform hover:scale-105 active:scale-100 text-white w-35">
@@ -112,7 +109,6 @@ const Home = () => {
     onClick={() => navigate('/recipes')} 
     className="w-full h-35 object-cover mb-2 cursor-pointer rounded-lg"/>
     Roll 
-    <p className="text-xs mt-1 font-light">A tasty wrap filled with veggies, meat, or paneer and rolled in soft flatbread.</p>
     </div>
     
     <div className="font-bold text-lg transition-transform hover:scale-105 active:scale-100 text-white w-35">
@@ -121,29 +117,58 @@ const Home = () => {
     onClick={() => navigate('/recipes')} 
     className="w-full h-35 object-cover mb-2 cursor-pointer rounded-lg"/>
     Sandwich 
-    <p className="text-xs mt-1 font-light">A quick meal made by placing fillings between slices of bread.</p>
     </div>
     
     </div>
     </div>
     {/* --- scroll 4 --- */}
-    <div className="h-screen flex flex-col justify-center items-center p-4">
-    <h2 className="text-3xl font-bold mb-4 text-center">Italian Pizza</h2>
+    <div className="flex flex-col mt-15">
+    {/* upper part */}
+    <div className="flex flex-col items-center p-3">
+    <h2 className="text-3xl font-bold text-center mb-5">Italian Pizza</h2>
     <div className="flex flex-col items-center max-w-md">
     <div 
     onClick={() => navigate('/recipe/detail/1')}
-    className="overflow-hidden transition-transform hover:scale-105 active:scale-100 cursor-pointer mb-4">
+    className="overflow-hidden transition-transform hover:scale-105 active:scale-100 cursor-pointer ">
     <img src={pizzaImg}
     alt="Italian Pizza"
     className="object-cover w-full h-60 rounded-lg" />
     </div>
-    <p className="text-sm font-light text-center">
+    <p className="text-sm font-light text-center p-4">
     Preheat the oven to 475°F (245°C), Roll out the pizza dough and spread tomato sauce evenly, 
     Top with fresh mozzarella and basil leaves, Drizzle with olive oil and bake for 12-15 minutes.
     </p>
     </div>
     </div>
+    {/* bottom part */}
+    <div className="flex flex-row bg-white text-black items-center gap-2">
+    <div className="w-full h-40 font-bold text-lg p-2 text-center">RBook
     </div>
+    <div className="w-full h-40 font-bold text-lg p-2 text-center">Info
+    <p 
+    onClick={() => navigate('/about')}
+    className="font-extralight text-sm cursor-pointer text-center">About</p>
+    <p 
+    onClick={() => navigate('/about')}
+    className="font-extralight text-sm cursor-pointer text-center">Contact</p>
+    </div>
+    <div className="w-full h-40 font-bold text-lg p-2">Category
+    <p className="font-extralight text-sm text-center">Primary Meal</p>
+    <p className="font-extralight text-sm text-center">Snacks</p>
+    <p className="font-extralight text-sm text-center">Soup</p>
+    <p className="font-extralight text-sm text-center">Dessert</p>
+    <p className="font-extralight text-sm text-center">Soft Drinks</p>
+    </div>
+    <div className="flex flex-col w-full font-bold text-lg text-center">follow
+    <img src={instagramIcon} alt="Instagram" className="w-4 h-4 object-cover inline-block mb-2 mx-5" />
+    <img src={facebookIcon} alt="Facebook" className="w-4 h-4 object-cover inline-block mb-2 mx-5" />
+    <img src={twitterIcon} alt="Twitter" className="w-4 h-4 object-cover inline-block mb-2 mx-5" />
+    <img src={youtubeIcon} alt="YouTube" className="w-4 h-4 object-cover inline-block mb-2 mx-5" />
+    </div>
+    </div>
+    </div>
+    </div>
+          
     
       {/* ..............for Laptop............ */}
 
@@ -306,7 +331,7 @@ const Home = () => {
           </div>
           </div>
           </div>
-          </div>
+         </div>
       
   )
 }
