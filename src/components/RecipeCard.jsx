@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const RecipeCard = (props) => {
     const{id, image, RName, ingr, inst} = props.recipe;
   return (
-   <div className="bg-white overflow-hidden rounded-xl shadow hover:scale-105 active:scale-95 transition-transform duration-300">
+   <div className="bg-black text-white overflow-hidden rounded-xl shadow hover:scale-105 active:scale-95 transition-transform duration-300 border border-gray-700">
          {/* ................... For Mobile View   .................. */}
          <div className="md:hidden">
         <Link to={`/recipe/detail/${id}`}

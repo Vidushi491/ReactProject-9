@@ -304,7 +304,7 @@ return (
           </div>
           </div>
           {/* bottom part */}
-          <div className="flex flex-row bg-white text-black mt-5 gap-10 justify-center items-center px-10">
+          <div className="flex flex-row bg-[#d9d4cf] text-black mt-5 gap-10 justify-center items-center px-10">
           <div className="w-full h-40 font-bold text-lg p-2">Recipe Book
           </div>
           <div className="w-full h-40 font-bold text-lg p-2">Info

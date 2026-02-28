@@ -25,7 +25,7 @@ const Create = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-black text-white min-h-screen">
       {/* for mobile view  & Laptop View*/}
       <div className="min-h-screen  p-4 md:p-10 ">
         <h1 className="mb-5 flex justify-center">
@@ -45,7 +45,7 @@ const Create = () => {
             <label className="block text-sm font-medium mb-1">Image</label>
             <input
               {...register("image")}
-              className="w-full border rounded-lg px-3 py-2 focus:ring-1 outline-none bg-white"
+              className="w-full border rounded-lg px-3 py-2 focus:ring-1 outline-none bg-black text-white"
               type="file"
               placeholder="https://example.com/image.jpg"
             />
@@ -58,7 +58,7 @@ const Create = () => {
             <input
               {...register("RName")}
               type="text"
-              className="w-full border rounded-lg px-3 py-2 resize-none focus:ring-1 outline-none bg-white"
+              className="w-full border rounded-lg px-3 py-2 resize-none focus:ring-1 outline-none bg-black text-white"
               placeholder="Dal Makhani"
             />
           </div>
@@ -69,7 +69,7 @@ const Create = () => {
             </label>
             <textarea
               {...register("desc")}
-              className="w-full border rounded-lg px-3 py-2 resize-none focus:ring-1 outline-none bg-white"
+              className="w-full border rounded-lg px-3 py-2 resize-none focus:ring-1 outline-none bg-black text-white"
               rows={4}
               placeholder="Dal Makhani  North Indian Punjabi dish ..."
             ></textarea>
@@ -81,7 +81,7 @@ const Create = () => {
             </label>
             <textarea
               {...register("inst")}
-              className="w-full border rounded-lg px-3 py-2 resize-none focus:ring-1 outline-none bg-white"
+              className="w-full border rounded-lg px-3 py-2 resize-none focus:ring-1 outline-none bg-black text-white"
               rows={4}
               placeholder="1. Rinse the whole black lentils and red kidney beans under cold water until the water runs clear..."
             ></textarea>
@@ -93,7 +93,7 @@ const Create = () => {
             </label>
             <textarea
               {...register("ingr")}
-              className="w-full border rounded-xl px-3 py-2 resize-none focus:ring-1 outline-none bg-white"
+              className="w-full border rounded-xl px-3 py-2 resize-none focus:ring-1 outline-none bg-black text-white"
               rows={6}
               placeholder="whole black lentils and red kidney beans , slow-cooked with tomatoes, ginger, garlic, and onions ..."
             ></textarea>
@@ -105,7 +105,7 @@ const Create = () => {
             </label>
             <select
               {...register("cat")}
-              className="w-full border rounded-xl px-3 py-2 resize-none focus:ring-1 outline-none bg-white">
+              className="w-full border rounded-xl px-3 py-2 resize-none focus:ring-1 outline-none bg-black text-white">
               <option value = "">Select Category</option>
               <option value = "Primary Meal">Primary Meal</option>
               <option value = "Snacks">Snacks</option>
@@ -119,12 +119,12 @@ const Create = () => {
             <label className="block text-sm font-medium mb-1">Chef Name</label>
             <textarea
               {...register("CName")}
-              className="w-full border rounded-xl px-2 py-2 resize-none focus:ring-1 outline-none bg-white"
+              className="w-full border rounded-xl px-2 py-2 resize-none focus:ring-1 outline-none bg-black text-white"
               placeholder="Garima Arora"
             ></textarea>
           </div>
 
-<div className="md:col-span-2"> <button className=" border rounded-xl w-full bg-[#B99668] font-semibold px-2 py-2 active:scale-95 transition" type="submit" > Add Recipe </button> </div>
+<div className="md:col-span-2"> <button className=" border rounded-xl w-full bg-white font-semibold px-2 py-2 active:scale-95 transition text-black" type="submit" > Add Recipe </button> </div>
         </form>
       </div>
     </div>
