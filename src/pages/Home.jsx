@@ -42,7 +42,7 @@ return (
 
   {/* ---Scroll 2 --- */}
 
-    <div className="h-screen flex flex-col justify-center items-center mt-15">
+    <div className="h-screen flex flex-col justify-center items-center mt-10">
     <h2 className="text-3xl font-bold">Italian Tiramisu </h2>
     <div className=''>
     <div className="flex-3 rounded-2xl overflow-hidden">
@@ -122,7 +122,7 @@ return (
     </div>
     </div>
     {/* --- scroll 4 --- */}
-    <div className="flex flex-col mt-15">
+    <div className="flex flex-col mt-10">
     {/* upper part */}
     <div className="flex flex-col items-center p-3">
     <h2 className="text-3xl font-bold text-center mb-5">Italian Pizza</h2>
@@ -141,29 +141,28 @@ return (
     </div>
     </div>
     {/* bottom part */}
-    <div className="flex flex-row bg-white text-black items-center gap-2">
-    <div className="w-full h-40 font-bold text-lg p-2 text-center">RBook
-    </div>
+    <div className="flex flex-row bg-white text-black items-start gap-2">
+    
     <div className="w-full h-40 font-bold text-lg p-2 text-center">Info
     <p 
     onClick={() => navigate('/about')}
-    className="font-extralight text-sm cursor-pointer text-center">About</p>
+    className="font-extralight text-sm cursor-pointer mt-1">About</p>
     <p 
     onClick={() => navigate('/about')}
-    className="font-extralight text-sm cursor-pointer text-center">Contact</p>
+    className="font-extralight text-sm cursor-pointer mt-0.5">Contact</p>
     </div>
-    <div className="w-full h-40 font-bold text-lg p-2">Category
-    <p className="font-extralight text-sm text-center">Primary Meal</p>
-    <p className="font-extralight text-sm text-center">Snacks</p>
-    <p className="font-extralight text-sm text-center">Soup</p>
-    <p className="font-extralight text-sm text-center">Dessert</p>
-    <p className="font-extralight text-sm text-center">Soft Drinks</p>
+    <div className="w-full h-40 font-bold text-lg p-2 text-center">Category
+    <p className="font-extralight text-sm mt-1">Primary Meal</p>
+    <p className="font-extralight text-sm mt-0.5">Snacks</p>
+    <p className="font-extralight text-sm mt-0.5">Soup</p>
+    <p className="font-extralight text-sm mt-0.5">Dessert</p>
+    <p className="font-extralight text-sm mt-0.5">Soft Drinks</p>
     </div>
-    <div className="flex flex-col w-full font-bold text-lg text-center">follow
-    <img src={instagramIcon} alt="Instagram" className="w-4 h-4 object-cover inline-block mb-2 mx-5" />
-    <img src={facebookIcon} alt="Facebook" className="w-4 h-4 object-cover inline-block mb-2 mx-5" />
-    <img src={twitterIcon} alt="Twitter" className="w-4 h-4 object-cover inline-block mb-2 mx-5" />
-    <img src={youtubeIcon} alt="YouTube" className="w-4 h-4 object-cover inline-block mb-2 mx-5" />
+    <div className="flex flex-col items-center w-full h-40 font-bold text-lg p-2 text-center">follow
+    <img src={instagramIcon} alt="Instagram" className="w-4 h-4 object-cover mt-1 mb-1" />
+    <img src={facebookIcon} alt="Facebook" className="w-4 h-4 object-cover mb-1" />
+    <img src={twitterIcon} alt="Twitter" className="w-4 h-4 object-cover mb-1" />
+    <img src={youtubeIcon} alt="YouTube" className="w-4 h-4 object-cover mb-1" />
     </div>
     </div>
     </div>

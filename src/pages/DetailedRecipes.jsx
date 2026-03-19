@@ -42,7 +42,7 @@ export const DetailedRecipes = () => {
   };
 
   return (
-    recipe ? <div className="bg-white min-h-screen">
+    recipe ? <div className="bg-black text-white min-h-screen">
       {/* ............for mobile............ */}
       <div className="md:hidden">
         <div className="mt-4 mb-4 flex justify-center items-center">
@@ -98,17 +98,17 @@ export const DetailedRecipes = () => {
             <textarea {...register("inst")} className="w-full p-2 border rounded" rows="4"></textarea>
           </div>
 
-          <div className="flex gap-6 justify-center items-center mt-4 mb-4">
+          <div className="flex gap-6 justify-center items-center mt-4 mb-5">
             <button 
               type="button"
-              className="bg-[#B99668] text-white px-2 rounded-sm shadow hover:scale-105 active:scale-95 transition-transform duration-300"
+              className="bg-black text-white px-2 shadow hover:scale-105 active:scale-95 transition-transform duration-300 border border-white-700"
               onClick={DeleteHandler}
             >
               Delete Recipe
             </button>
             <button 
               type="submit"
-              className="bg-[#B99668] text-white px-2 rounded-sm shadow hover:scale-105 active:scale-95 transition-transform duration-300">
+              className="bg-black text-white px-2 shadow hover:scale-105 active:scale-95 transition-transform duration-300 border border-white-700">
               Update Recipe
             </button>
           </div>
@@ -170,17 +170,17 @@ export const DetailedRecipes = () => {
             <textarea {...register("inst")} className="w-full p-2 border rounded" rows="4"></textarea>
           </div>
 
-          <div className="flex items-center justify-center gap-5  mb-4">
+          <div className="flex items-center justify-center gap-5 mb-10">
             <button 
               type="button"
-              className="bg-[#B99668] text-white px-2 shadow hover:scale-3d active:scale-95 transition-transform duration-300"
+              className="bg-black text-white px-2 shadow hover:scale-105 active:scale-95 transition-transform duration-300 border border-white-700"
               onClick={DeleteHandler}
             >
               Delete
             </button>
             <button 
               type="submit"
-              className="bg-[#B99668] text-white px-2 shadow hover:scale-3d active:scale-95 transition-transform duration-300">
+              className="bg-black text-white px-2 shadow hover:scale-105 active:scale-95 transition-transform duration-300 border border-white-700">
               Update
             </button>
           </div>
