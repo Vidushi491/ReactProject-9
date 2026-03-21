@@ -24,7 +24,7 @@ return (
 <div className='bg-black text-white'>
 
                           {/* ..............for mobile............ */}
-<div className="md:hidden">
+<div className="lg:hidden">
 
   {/* ---Scroll 1 --- */}
 
@@ -33,16 +33,16 @@ return (
     <h2 className=" text-sm font-bold mb-4">From Your Kitchen To This World 🌍</h2>
     <p className="text-sm font-extralight text-center px-6">Create Your Own Recipe This Is The Largets Hub Where People Share there  Recipies So that People Can Follow and Can Make There Own food Delicious Without Getting Confused...</p>
     </div>
-    <div className="p-1">
+    <div className="p-1 flex justify-center md:justify-center lg:justify-center">
     <img src={chefImg}
     onClick={() => navigate('/create-recipes')} 
     alt="Chef preparing food"
-    className="w-full h-full object-top p-2 transition-transform hover:scale-105 cursor-pointer mb-15"/>
+    className="h-auto object-top p-2 transition-transform hover:scale-105 cursor-pointer mb-4 max-h-60 max-w-xs md:max-h-80 md:max-w-sm lg:max-h-64 lg:max-w-xs"/>
     </div>
 
   {/* ---Scroll 2 --- */}
 
-    <div className="h-screen flex flex-col justify-center items-center mt-10">
+    <div className="min-h-auto flex flex-col justify-center items-center mt-4 md:mt-12 md:mb-6 lg:mt-6 lg:mb-3">
     <h2 className="text-3xl font-bold">Italian Tiramisu </h2>
     <div className=''>
     <div className="flex-3 rounded-2xl overflow-hidden">
@@ -51,7 +51,7 @@ return (
     className="object-contain h-75 w-full transition-transform hover:scale-105" />
     </div>
     {/* bottom part */}
-    <div className='p-2 flex flex-wrap justify-center gap-5 mt-10 bg-black mb-10'>
+    <div className='p-2 flex flex-wrap md:flex-nowrap justify-center gap-5 mt-10 bg-black mb-10'>
     <div 
     onClick={() => navigate('/recipes')} 
     className="bg-white text-black w-35 h-35 rounded-2xl font-bold text-lg transition-transform hover:scale-105 text-center p-2 cursor-pointer ">
@@ -81,10 +81,10 @@ return (
     </div>
   
   {/* scroll 3 */}
-    <div className="h-screen flex flex-col justify-center items-center p-4 mt-10">
+    <div className="min-h-auto flex flex-col justify-center items-center p-4 mt-4 md:mt-12 md:mb-6 lg:mt-6 lg:mb-3">
     <h1 className="font-bold text-3xl text-center mb-2">Try At Your Home </h1>
     <p className="font-light text-sm text-center mb-8">This are some of our best recipes for you to try at home!</p>
-    <div className="flex flex-wrap gap-6 justify-center items-center text-center">
+    <div className="flex flex-wrap md:flex-nowrap gap-6 justify-center items-center text-center">
     
     <div className="font-bold text-lg transition-transform hover:scale-105 active:scale-100 text-white w-35">
     <img  
@@ -122,7 +122,7 @@ return (
     </div>
     </div>
     {/* --- scroll 4 --- */}
-    <div className="flex flex-col mt-10">
+    <div className="flex flex-col mt-10 md:mt-8 lg:mt-4">
     {/* upper part */}
     <div className="flex flex-col items-center p-3">
     <h2 className="text-3xl font-bold text-center mb-5">Italian Pizza</h2>
@@ -171,7 +171,7 @@ return (
     
       {/* ..............for Laptop............ */}
 
-      <div className="hidden md:flex flex-col ">
+      <div className="hidden lg:flex flex-col ">
 
         {/* ---- scroll 1 ----*/}
 
