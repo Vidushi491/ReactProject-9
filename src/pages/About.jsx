@@ -5,7 +5,7 @@ const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+asdfghjkl;''
   return (
 <div className="bg-black text-white min-h-screen ">
     {/* ---for mobile view--- */}
